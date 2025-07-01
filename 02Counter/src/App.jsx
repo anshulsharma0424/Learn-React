@@ -4,13 +4,25 @@ import './App.css'
 function App() {
   let [counter, setCounter] = useState(0)
     
-  function addValue(){
-    // console.log("Value added", Math.random())
+  function addValue(){ // Interview Question **************************************************
     if(counter < 20){
-      counter += 1;
+      // setCounter(counter += 1);
+      // setCounter(counter += 1);
+      // setCounter(counter += 1);
+      // setCounter(counter += 1);
+      // setCounter(counter += 1); *************** These will run all and counter value will increment by 5 each time addVal pressed.
+      counter = counter + 1;
       setCounter(counter);
     }
   }
+
+  // function addValue(){
+  //   // console.log("Value added", Math.random())
+  //   if(counter < 20){
+  //     counter += 1;
+  //     setCounter(counter);
+  //   }
+  // }
   
   function removeValue(){
     // console.log("Value removed", Math.random())
